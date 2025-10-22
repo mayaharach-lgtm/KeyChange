@@ -12,14 +12,16 @@ A Chrome extension that detects and suggests real-time corrections for common ty
 ## Installation (for development)
 
 1. Clone or download this repository.  
-2. Open your browser (Chrome/Cursor) and navigate to `chrome://extensions`.  
-3. Enable **Developer mode** using the toggle in the top-right corner.  
-4. Click **Load unpacked**.  
-5. Select the full project folder.
+2. Download the hebrew.txt file from : https://drive.google.com/file/d/1JoCgpiywRUGFGFOdTOtXtI6Ge5mVZTzq/view?usp=sharing and add it to the data file.
+3. Generate the data\hebrew-words.json file from hebrew.txt by running : "node convert.js" in the terminal
+4. Open your browser (Chrome/Cursor) and navigate to `chrome://extensions`.  
+5. Enable **Developer mode** using the toggle in the top-right corner.  
+6. Click **Load unpacked**.  
+7. Select the full project folder.
 
 The extension is now active.
 
-# Before running the extention, download the file from : https://drive.google.com/file/d/1JoCgpiywRUGFGFOdTOtXtI6Ge5mVZTzq/view?usp=sharing and add it to the data file. then, generate the data\hebrew-words.json file from hebrew.txt by running : "node convert.js" in the terminal
+
 
 
 ## Credits
