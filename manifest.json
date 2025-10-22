@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "KeyChange",
+  "version": "1.0",
+  "description": "Detects and fixes wrong-keyboard typing between Hebrew and English.",
+      "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://api.dictionaryapi.dev/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "content/content.js"
+        ],
+        "run_at": "document_idle",
+        "all_frames": true 
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "data/hebrew-words.json"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ]
+  }
