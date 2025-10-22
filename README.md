@@ -19,7 +19,7 @@ A Chrome extension that detects and suggests real-time corrections for common ty
 
 The extension is now active.
 
-Note: The file `data/hebrew-words.json` is automatically generated from `hebrew.txt` during the first run and is excluded from version control.
+# Before running the extention, download the file from : https://drive.google.com/file/d/1JoCgpiywRUGFGFOdTOtXtI6Ge5mVZTzq/view?usp=sharing and add it to the data file. then, generate the data\hebrew-words.json file from hebrew.txt by running : "node convert.js" in the terminal
 
 
 ## Credits
